@@ -1,0 +1,112 @@
+
+#calc_body {    /* рамка калькулятора*/
+    border: 4px solid #55D; 
+    box-shadow: 3px 3px 8px #960;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    color: #444;
+    /*width: 35em; -нельзя фиксировать ширину, т.к. пропадет адаптивность*/
+	padding: 5px;
+    text-align: left;
+    font-size: 1.6em;
+	font-weight: 500;
+}
+
+.in_box
+{            /* боксики ввода (input) */
+    transition: all 0.5s !important;
+    border: 2px solid #555 !important;
+    box-shadow: 1px 1px 2px #666 !important;
+    color: #e86593 !important;
+	background-color: #F2E7E4 !important;
+	margin: 2px !important;
+	padding: 8px !important;
+	font-size: 1.1em !important;
+	font-weight: 600 !important;
+	width: 85px;
+	text-align: center;
+    border-radius: 5px !important;
+}
+
+.in_box:hover
+{            /* боксики ввода (input) */
+    transition: all 1s;
+    border: 2px solid #555;
+    box-shadow: 2px 2px 4px #222;
+    color: #990000;
+	background-color: #52E7f4 !important;
+    border-radius: 5px;
+    transform: skewX(-8deg);
+}
+
+#calculate{            /* параметры кнопки */
+    transition-timing-function: ease-in-out;
+    transition: background-color 2s, box-shadow 2s, transform 1s, font-size 0.5s;
+    margin-left: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    background-color: burlywood;
+     background-image: 'wp-content/uploads/2018/08/screw_50px.jpg';
+}
+#calculate span{ /*позиционирование шрифта кнопки по вертикали*/
+    position: relative; 
+    /*bottom: 5px;*/   /*можно так поднять шрифт*/
+    vertical-align: 4px; /*а можно так поднять шрифт*/
+}
+#calculate:hover {   /* параметры кнопки */
+    transition-timing-function: ease-in-out;
+    transition: background-color 2s, box-shadow 1s, transform 1s, font-size 0.5s;
+    margin-left: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    transform: scale(1.1);
+    transform: skewX(-10deg);
+    background-color: #eee;
+    box-shadow: 4px 4px 8px rgba(0,0,0, 0.5);
+}
+
+#result_box {    /* блок вывода результатов*/
+    transition: all 2s;
+    border: 3px solid black; 
+    border-radius: 10px;
+    /*width: 30em;*/
+	padding: 8px;
+    text-align: center;
+    background-color: #e2e2e2;
+    line-height: 1.6em;/*межстрочный интервал*/
+}
+
+#result_box:hover {    /* блок вывода результатов*/
+    transition: all 1s;
+    border: 4px solid #f02; 
+    border-radius: 50px;
+	padding: 10px;
+    text-align: center;
+    background-color: #EEE;
+}
+
+
+#res_1        /* вывод результата*/
+{
+	color: #f49;
+	font-size: 2.1em;
+	font-weight: 600;
+    text-shadow: #599 5px 0 6px, #599 0 0px 6px, #599 -0px 0 6px, #599 0 -0px 6px;   /*  - обводка +тень */
+/*    text-shadow: 2px 0px 10px #000;   /* простая тень */
+
+}
+
+#Meas_Units1 /* подпись единиц изменения*/
+{
+	color: #000;
+	font-size: 1.8em;
+	font-weight: 400;
+}
+
+.tab_around
+{ /*ТАБ вокруг фрагмента текста*/
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
